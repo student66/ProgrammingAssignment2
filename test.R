@@ -1,5 +1,9 @@
 # test.R
 
+#
+# Unit testing cachematrix.R
+#
+
 source("cachematrix.R")
 
 m.dim = 5 

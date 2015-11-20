@@ -1,8 +1,8 @@
 ## Put comments here that give an overall description of what your
 ## functions do
 
-## Write a short comment describing this function
-
+## This function creates a cached matrix.
+#
 makeCacheMatrix <- function(x = matrix()) {
   minvrs <- NULL
   set <- function(y) {
@@ -18,9 +18,10 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-
-## Write a short comment describing this function
-
+## This function first checks if the matrix inverce is calculated already
+## If so, it returns the cached result. Otherwise it performs the 
+## inverse calculation using solve(), and caches the result
+#
 cacheSolve <- function(x, ...) {
   ## Return a matrix that is the inverse of 'x'
   minvrs <- x$getinverse()
